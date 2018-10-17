@@ -49,17 +49,17 @@ function draw() {
   myAlpha =10;
 
   for (let i=0; i<infectionNum; i++){
-    if (infectionX[i] < 0 + infectionDiameter[i]){
+    if (infectionX[i] < 0 + infectionDiameter[i]/5){
       infectionX[i] = infectionX[i]+1;
       infectionMoveX[i] = infectionMoveX[i]*-1
-    }else if (infectionX[i] > width - infectionDiameter[i]){
+    }else if (infectionX[i] > width - infectionDiameter[i]/5){
       infectionX[i] = infectionX[i]-1;
       infectionMoveX[i] = infectionMoveX[i]*-1
     }
-    if (infectionY[i] < 0 + infectionDiameter[i]){
+    if (infectionY[i] < 0 + infectionDiameter[i]/5){
       infectionY[i] = infectionY[i]+1;
       infectionMoveY[i] = infectionMoveY[i]*-1
-    }else if (infectionY[i] > height - infectionDiameter[i]){
+    }else if (infectionY[i] > height - infectionDiameter[i]/5){
       infectionY[i] = infectionY[i]-1;
       infectionMoveY[i] = infectionMoveY[i]*-1
     }
