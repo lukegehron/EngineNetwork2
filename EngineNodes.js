@@ -4,7 +4,7 @@ let infectionX = [];
 let infectionY = [];
 let infectionMoveX = [];
 let infectionMoveY = [];
-let infectionNum = 14;
+let infectionNum = 24;
 
 let infectionArray = [[0,0],[0,0],[0,0],[0,0],[0,0],[0,0],[0,0]];
 
@@ -38,14 +38,14 @@ function setup() {
     }
     infectionMoveX.push(random(myX));
     infectionMoveY.push(random(myY));
-    let dia = int(random(30,190));
+    let dia = int(random(430,590));
     infectionDiameter.push(dia);
 
   }
 }
 
 function draw() {
-  background(220,26,85);
+  background(255);
   myAlpha =10;
 
   for (let i=0; i<infectionNum; i++){
